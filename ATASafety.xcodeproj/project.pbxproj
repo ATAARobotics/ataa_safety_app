@@ -21,7 +21,7 @@
 		4260CD11240C671E0095CDE4 /* SlackConnect.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4260CD10240C671E0095CDE4 /* SlackConnect.swift */; };
 		426653D523FC944E00CA6522 /* checklist.swift in Sources */ = {isa = PBXBuildFile; fileRef = 426653D423FC944E00CA6522 /* checklist.swift */; };
 		426653D723FC981D00CA6522 /* ChecklistSubmitViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 426653D623FC981D00CA6522 /* ChecklistSubmitViewController.swift */; };
-		426D4A76240460FD009DABB4 /* Keys.swift in Sources */ = {isa = PBXBuildFile; fileRef = 426D4A75240460FD009DABB4 /* Keys.swift */; };
+		426D4A76240460FD009DABB4 /* KeysSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 426D4A75240460FD009DABB4 /* KeysSettings.swift */; };
 		426D4A8224046CFC009DABB4 /* EventTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 426D4A8124046CFC009DABB4 /* EventTableViewController.swift */; };
 		427FEB4D23FB5AB900531D90 /* SafetyChecklistFile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 427FEB4C23FB5AB900531D90 /* SafetyChecklistFile.swift */; };
 		42B2DFFA23FDD0CC0021CBD8 /* ChecklistTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42B2DFF923FDD0CC0021CBD8 /* ChecklistTableViewCell.swift */; };
@@ -52,7 +52,7 @@
 		4260CD10240C671E0095CDE4 /* SlackConnect.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SlackConnect.swift; sourceTree = "<group>"; };
 		426653D423FC944E00CA6522 /* checklist.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = checklist.swift; sourceTree = "<group>"; };
 		426653D623FC981D00CA6522 /* ChecklistSubmitViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChecklistSubmitViewController.swift; sourceTree = "<group>"; };
-		426D4A75240460FD009DABB4 /* Keys.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Keys.swift; sourceTree = "<group>"; };
+		426D4A75240460FD009DABB4 /* KeysSettings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeysSettings.swift; sourceTree = "<group>"; };
 		426D4A8124046CFC009DABB4 /* EventTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventTableViewController.swift; sourceTree = "<group>"; };
 		427FEB4C23FB5AB900531D90 /* SafetyChecklistFile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SafetyChecklistFile.swift; sourceTree = "<group>"; };
 		42B2DFF923FDD0CC0021CBD8 /* ChecklistTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChecklistTableViewCell.swift; sourceTree = "<group>"; };
@@ -101,7 +101,7 @@
 			children = (
 				4240F0CF240DA6B70019C781 /* GoogleService-Info.plist */,
 				4260CD10240C671E0095CDE4 /* SlackConnect.swift */,
-				426D4A75240460FD009DABB4 /* Keys.swift */,
+				426D4A75240460FD009DABB4 /* KeysSettings.swift */,
 				426D4A8024046CEB009DABB4 /* Event */,
 				42B2DFFF23FE4F000021CBD8 /* Settings */,
 				422D23AD23FB4B18007339C9 /* Checklist */,
@@ -297,7 +297,7 @@
 				427FEB4D23FB5AB900531D90 /* SafetyChecklistFile.swift in Sources */,
 				426D4A8224046CFC009DABB4 /* EventTableViewController.swift in Sources */,
 				4260A7722406CB600078472A /* AboutPageViewController.swift in Sources */,
-				426D4A76240460FD009DABB4 /* Keys.swift in Sources */,
+				426D4A76240460FD009DABB4 /* KeysSettings.swift in Sources */,
 				42E5937B240B4DB100A796DB /* CurrentEvents.swift in Sources */,
 				422D239523FB0E79007339C9 /* AppDelegate.swift in Sources */,
 				426653D523FC944E00CA6522 /* checklist.swift in Sources */,

@@ -49,7 +49,7 @@ class ChecklistSubmitViewController: UIViewController {
     @IBAction func submitReport(_ sender: Any) {
         if(!submitted){
             let slackConnect = SlackConnect()
-            let pitReport = SlackPitReport(checklist: reportSummary, channel: "CUG8RAVRR")
+            let pitReport = SlackPitReport(checklist: reportSummary, channel: SlackChannel)
             if(slackConnect.publishPitReport(report: pitReport)){
                 reportSummaryTextView.text = "Report Submitted\nUse Back Button to Return to Main Menu"
                 submitted = true
