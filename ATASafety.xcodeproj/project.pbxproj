@@ -99,7 +99,6 @@
 		422D239323FB0E79007339C9 /* ATASafety */ = {
 			isa = PBXGroup;
 			children = (
-				4240F0CF240DA6B70019C781 /* GoogleService-Info.plist */,
 				4260CD10240C671E0095CDE4 /* SlackConnect.swift */,
 				426D4A75240460FD009DABB4 /* KeysSettings.swift */,
 				426D4A8024046CEB009DABB4 /* Event */,
@@ -114,6 +113,7 @@
 				422D23A223FB0E7A007339C9 /* LaunchScreen.storyboard */,
 				422D23A523FB0E7A007339C9 /* Info.plist */,
 				422D239D23FB0E79007339C9 /* ATASafety.xcdatamodeld */,
+				4240F0CF240DA6B70019C781 /* GoogleService-Info.plist */,
 			);
 			path = ATASafety;
 			sourceTree = "<group>";

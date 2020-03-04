@@ -22,7 +22,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         // Check/Add Notifications
         let localNotificationManager = LocalNotificationManager()
-        localNotificationManager.listScheduledNotifications()
         
         var notifiedEvents : [String] = UserDefaults.standard.array(forKey: "notifiedEvents") as? [String] ?? []
         for event in currentEvents{
