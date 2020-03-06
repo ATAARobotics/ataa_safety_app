@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 51;
+	objectVersion = 50;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -31,7 +31,7 @@
 		42E5937B240B4DB100A796DB /* CurrentEvents.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42E5937A240B4DB100A796DB /* CurrentEvents.swift */; };
 		42E5937D240B91D400A796DB /* LocalNotificationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42E5937C240B91D400A796DB /* LocalNotificationManager.swift */; };
 		42FD8AF223FEED3D004DF553 /* AccountSettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42FD8AF123FEED3D004DF553 /* AccountSettingsViewController.swift */; };
-		6B26C1EB9DD115DFEBF8FBDB /* Pods_ATASafety.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7138E499686795BDB1FD3FE0 /* Pods_ATASafety.framework */; };
+		EB57CA653B859CFA13EF17F7 /* libPods-ATASafety.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A1D182DD0638F35236E83DB0 /* libPods-ATASafety.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -63,6 +63,7 @@
 		42E5937C240B91D400A796DB /* LocalNotificationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalNotificationManager.swift; sourceTree = "<group>"; };
 		42FD8AF123FEED3D004DF553 /* AccountSettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountSettingsViewController.swift; sourceTree = "<group>"; };
 		7138E499686795BDB1FD3FE0 /* Pods_ATASafety.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ATASafety.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A1D182DD0638F35236E83DB0 /* libPods-ATASafety.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ATASafety.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BF225B70A11587840ECBF0DB /* Pods-ATASafety.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ATASafety.debug.xcconfig"; path = "Target Support Files/Pods-ATASafety/Pods-ATASafety.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -71,7 +72,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6B26C1EB9DD115DFEBF8FBDB /* Pods_ATASafety.framework in Frameworks */,
+				EB57CA653B859CFA13EF17F7 /* libPods-ATASafety.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -85,6 +86,7 @@
 				422D239223FB0E79007339C9 /* Products */,
 				4FF7F24339A30996FFD09D68 /* Pods */,
 				F30506175CF98356082C3655 /* Frameworks */,
+				42E37F43241158960044A2EA /* Recovered References */,
 			);
 			sourceTree = "<group>";
 		};
@@ -152,6 +154,14 @@
 			path = Settings;
 			sourceTree = "<group>";
 		};
+		42E37F43241158960044A2EA /* Recovered References */ = {
+			isa = PBXGroup;
+			children = (
+				7138E499686795BDB1FD3FE0 /* Pods_ATASafety.framework */,
+			);
+			name = "Recovered References";
+			sourceTree = "<group>";
+		};
 		4FF7F24339A30996FFD09D68 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -164,7 +174,7 @@
 		F30506175CF98356082C3655 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				7138E499686795BDB1FD3FE0 /* Pods_ATASafety.framework */,
+				A1D182DD0638F35236E83DB0 /* libPods-ATASafety.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -180,15 +190,12 @@
 				422D238D23FB0E79007339C9 /* Sources */,
 				422D238E23FB0E79007339C9 /* Frameworks */,
 				422D238F23FB0E79007339C9 /* Resources */,
-				A3BBDEDA9201DCC0C5100C4C /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
 			name = ATASafety;
-			packageProductDependencies = (
-			);
 			productName = ATASafety;
 			productReference = 422D239123FB0E79007339C9 /* ATASafety.app */;
 			productType = "com.apple.product-type.application";
@@ -217,8 +224,6 @@
 				Base,
 			);
 			mainGroup = 422D238823FB0E79007339C9;
-			packageReferences = (
-			);
 			productRefGroup = 422D239223FB0E79007339C9 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -263,23 +268,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		A3BBDEDA9201DCC0C5100C4C /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-ATASafety/Pods-ATASafety-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-ATASafety/Pods-ATASafety-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ATASafety/Pods-ATASafety-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
