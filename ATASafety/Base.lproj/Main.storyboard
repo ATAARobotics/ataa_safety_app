@@ -370,7 +370,7 @@
                                 </attributedString>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ATA Safety App v1.0.0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Kme-hE-Ai7">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ATA Safety App v_____" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Kme-hE-Ai7">
                                 <rect key="frame" x="123.5" y="201" width="167" height="21"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="167" id="Qul-Yv-f1K"/>
@@ -412,6 +412,9 @@
                         <viewLayoutGuide key="safeArea" id="6Pt-Fh-vq8"/>
                     </view>
                     <navigationItem key="navigationItem" id="MkF-h2-4M6"/>
+                    <connections>
+                        <outlet property="appVerionLabel" destination="Kme-hE-Ai7" id="kvz-LC-uRa"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9wH-PJ-q98" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
