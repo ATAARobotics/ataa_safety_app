@@ -7,8 +7,8 @@
 //
 
 import UIKit
-import MessageUI
 import Alamofire
+import FirebaseAnalytics
 
 class ChecklistSubmitViewController: UIViewController {
     
@@ -20,6 +20,9 @@ class ChecklistSubmitViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+        
+        Analytics.setScreenName("Checklist Submit View", screenClass: "Checklist Submit View Controller")
+        
         reportSummaryTextView.text = ""
         reportSummary = "Safety Report Summary:\n"
         
@@ -47,6 +50,9 @@ class ChecklistSubmitViewController: UIViewController {
     }
     
     @IBAction func submitReport(_ sender: Any) {
+        
+        Analytics.logEvent("safety_report_submitted", parameters: [:])
+        
         if(!submitted){
             let slackConnect = SlackConnect()
             let pitReport = SlackPitReport(checklist: reportSummary, channel: SlackChannel)
