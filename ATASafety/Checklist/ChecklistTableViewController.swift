@@ -7,11 +7,14 @@
 //
 
 import UIKit
+import FirebaseAnalytics
 
 class ChecklistTableViewController: UITableViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        Analytics.setScreenName("Checklist View", screenClass: "Checklist Table View Controller")
 
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
