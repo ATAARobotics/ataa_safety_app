@@ -10,10 +10,14 @@ import UIKit
 
 class AboutPageViewController: UIViewController {
 
+    @IBOutlet weak var appVerionLabel: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        appVerionLabel.text = ("ATA Safety App v" + (Bundle.main.infoDictionary?["CFBundleShortVersionString"] as? String ?? "error"))
+        //Bundle.main.infoDictionary?["CFBundleShortVersionString"] as? String
     }
     
 
