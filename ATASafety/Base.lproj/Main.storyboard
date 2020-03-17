@@ -307,24 +307,6 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="s6L-33-9Hb">
-                                <rect key="frame" x="92" y="154" width="230" height="43"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" secondItem="s6L-33-9Hb" secondAttribute="height" multiplier="230:43" id="5oF-GN-1So"/>
-                                    <constraint firstAttribute="height" constant="43" id="eYZ-5p-ZWG"/>
-                                    <constraint firstAttribute="width" constant="230" id="epC-qt-dM6"/>
-                                </constraints>
-                                <attributedString key="attributedText">
-                                    <fragment content="Pre-Release Version ">
-                                        <attributes>
-                                            <color key="NSColor" systemColor="systemRedColor" red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                            <font key="NSFont" metaFont="system" size="17"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
-                                        </attributes>
-                                    </fragment>
-                                </attributedString>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cuJ-FO-6gm">
                                 <rect key="frame" x="91" y="230" width="232" height="70"/>
                                 <constraints>
@@ -342,12 +324,31 @@
                                 </attributedString>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="s6L-33-9Hb">
+                                <rect key="frame" x="92" y="179" width="230" height="43"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="s6L-33-9Hb" secondAttribute="height" multiplier="230:43" id="5oF-GN-1So"/>
+                                    <constraint firstAttribute="height" constant="43" id="eYZ-5p-ZWG"/>
+                                    <constraint firstAttribute="width" constant="230" id="epC-qt-dM6"/>
+                                </constraints>
+                                <attributedString key="attributedText">
+                                    <fragment content="Pre-Release Version ">
+                                        <attributes>
+                                            <color key="NSColor" systemColor="systemRedColor" red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <font key="NSFont" metaFont="system" size="17"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
+                            <constraint firstItem="s6L-33-9Hb" firstAttribute="centerX" secondItem="WPr-yv-qBE" secondAttribute="centerX" id="AXA-Vn-jYR"/>
                             <constraint firstItem="Kme-hE-Ai7" firstAttribute="centerX" secondItem="WPr-yv-qBE" secondAttribute="centerX" id="Tck-1c-Qpr"/>
                             <constraint firstItem="Kme-hE-Ai7" firstAttribute="top" secondItem="6Pt-Fh-vq8" secondAttribute="top" constant="20" id="Wro-Dr-2QD"/>
-                            <constraint firstItem="s6L-33-9Hb" firstAttribute="centerX" secondItem="WPr-yv-qBE" secondAttribute="centerX" id="hYD-EC-BZ9"/>
+                            <constraint firstItem="s6L-33-9Hb" firstAttribute="centerY" secondItem="WPr-yv-qBE" secondAttribute="centerY" constant="-247.5" id="lbC-2c-c6a"/>
                             <constraint firstItem="cuJ-FO-6gm" firstAttribute="top" secondItem="Kme-hE-Ai7" secondAttribute="bottom" constant="10" id="tpP-ER-43r"/>
                             <constraint firstItem="cuJ-FO-6gm" firstAttribute="centerY" secondItem="WPr-yv-qBE" secondAttribute="centerY" constant="-183" id="yE8-1t-Dxj"/>
                             <constraint firstItem="cuJ-FO-6gm" firstAttribute="centerX" secondItem="WPr-yv-qBE" secondAttribute="centerX" id="yaY-jW-NFE"/>
