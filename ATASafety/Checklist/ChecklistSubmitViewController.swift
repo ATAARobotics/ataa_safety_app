@@ -12,6 +12,10 @@ import FirebaseAnalytics
 
 class ChecklistSubmitViewController: UIViewController {
     
+    @IBOutlet weak var backButton: UIBarButtonItem!
+    @IBOutlet weak var doneButton: UIBarButtonItem!
+    @IBOutlet weak var submitButton: UIBarButtonItem!
+    @IBOutlet weak var statusLabel: UILabel!
     @IBOutlet weak var reportSummaryTextView: UITextView!
     
     var reportSummary = ""
@@ -20,6 +24,11 @@ class ChecklistSubmitViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+        
+        //sets up Buttons
+        doneButton.isEnabled = false
+        submitButton.isEnabled = true
+        backButton.isEnabled = true
         
         Analytics.setScreenName("Checklist Submit View", screenClass: "Checklist Submit View Controller")
         
@@ -57,10 +66,12 @@ class ChecklistSubmitViewController: UIViewController {
             let slackConnect = SlackConnect()
             let pitReport = SlackPitReport(checklist: reportSummary, channel: SlackChannel)
             if(slackConnect.publishPitReport(report: pitReport)){
-                reportSummaryTextView.text = "Report Submitted\nUse Back Button to Return to Main Menu"
-                submitted = true
+                reportSummaryTextView.text = "Report Submitted\nPress done to return to main menu"
+                submitButton.isEnabled = false
+                doneButton.isEnabled = true
+                backButton.isEnabled = false
             } else {
-                reportSummaryTextView.text = "An Error has Occured while submitting\nUse Back Button to Return to Main Menu"
+                reportSummaryTextView.text = "An Error has Occured while submitting\nPress Back to go back and try again"
             }
         }
         
