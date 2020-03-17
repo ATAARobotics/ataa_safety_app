@@ -74,7 +74,7 @@ DEPENDENCIES:
   - OAuthSwift (~> 2.0.0)
 
 SPEC REPOS:
-  trunk:
+  https://github.com/cocoapods/specs.git:
     - Alamofire
     - Firebase
     - FirebaseAnalytics
@@ -108,4 +108,4 @@ SPEC CHECKSUMS:
 
 PODFILE CHECKSUM: 926e9ed8e086bfdfc88a7082a735f87f9533c3bf
 
-COCOAPODS: 1.8.4
+COCOAPODS: 1.5.2

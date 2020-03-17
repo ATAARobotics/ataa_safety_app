@@ -31,11 +31,15 @@
 		42E5937B240B4DB100A796DB /* CurrentEvents.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42E5937A240B4DB100A796DB /* CurrentEvents.swift */; };
 		42E5937D240B91D400A796DB /* LocalNotificationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42E5937C240B91D400A796DB /* LocalNotificationManager.swift */; };
 		42FD8AF223FEED3D004DF553 /* AccountSettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42FD8AF123FEED3D004DF553 /* AccountSettingsViewController.swift */; };
+		50A0E5E6241FB89400968587 /* ReportingHomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50A0E5E5241FB89400968587 /* ReportingHomeViewController.swift */; };
+		50A0E5E8241FBB6D00968587 /* ReportSubmittedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50A0E5E7241FBB6D00968587 /* ReportSubmittedViewController.swift */; };
 		EB57CA653B859CFA13EF17F7 /* libPods-ATASafety.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A1D182DD0638F35236E83DB0 /* libPods-ATASafety.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		075A57A53C9FDC48DF088EA0 /* Pods-ATASafety.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ATASafety.release.xcconfig"; path = "Target Support Files/Pods-ATASafety/Pods-ATASafety.release.xcconfig"; sourceTree = "<group>"; };
+		25EAC9EF72A5DE24E674B95C /* Pods-ATASafety.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ATASafety.release.xcconfig"; path = "Pods/Target Support Files/Pods-ATASafety/Pods-ATASafety.release.xcconfig"; sourceTree = "<group>"; };
+		2DD876CA020BE9DB8D71F886 /* Pods-ATASafety.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ATASafety.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ATASafety/Pods-ATASafety.debug.xcconfig"; sourceTree = "<group>"; };
 		422B6B23240870320099D6EF /* EventViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventViewController.swift; sourceTree = "<group>"; };
 		422D239123FB0E79007339C9 /* ATASafety.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ATASafety.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		422D239423FB0E79007339C9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -62,6 +66,8 @@
 		42E5937A240B4DB100A796DB /* CurrentEvents.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrentEvents.swift; sourceTree = "<group>"; };
 		42E5937C240B91D400A796DB /* LocalNotificationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalNotificationManager.swift; sourceTree = "<group>"; };
 		42FD8AF123FEED3D004DF553 /* AccountSettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountSettingsViewController.swift; sourceTree = "<group>"; };
+		50A0E5E5241FB89400968587 /* ReportingHomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReportingHomeViewController.swift; sourceTree = "<group>"; };
+		50A0E5E7241FBB6D00968587 /* ReportSubmittedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReportSubmittedViewController.swift; sourceTree = "<group>"; };
 		7138E499686795BDB1FD3FE0 /* Pods_ATASafety.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ATASafety.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A1D182DD0638F35236E83DB0 /* libPods-ATASafety.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ATASafety.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BF225B70A11587840ECBF0DB /* Pods-ATASafety.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ATASafety.debug.xcconfig"; path = "Target Support Files/Pods-ATASafety/Pods-ATASafety.debug.xcconfig"; sourceTree = "<group>"; };
@@ -124,6 +130,8 @@
 			isa = PBXGroup;
 			children = (
 				422D23AB23FB4B14007339C9 /* ChecklistTableViewController.swift */,
+				50A0E5E7241FBB6D00968587 /* ReportSubmittedViewController.swift */,
+				50A0E5E5241FB89400968587 /* ReportingHomeViewController.swift */,
 				42B2DFF923FDD0CC0021CBD8 /* ChecklistTableViewCell.swift */,
 				426653D623FC981D00CA6522 /* ChecklistSubmitViewController.swift */,
 				42B2DFFB23FE1BAB0021CBD8 /* ChecklistReportValues.swift */,
@@ -167,6 +175,8 @@
 			children = (
 				BF225B70A11587840ECBF0DB /* Pods-ATASafety.debug.xcconfig */,
 				075A57A53C9FDC48DF088EA0 /* Pods-ATASafety.release.xcconfig */,
+				2DD876CA020BE9DB8D71F886 /* Pods-ATASafety.debug.xcconfig */,
+				25EAC9EF72A5DE24E674B95C /* Pods-ATASafety.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -253,15 +263,11 @@
 			buildActionMask = 2147483647;
 			files = (
 			);
-			inputFileListPaths = (
-			);
 			inputPaths = (
 				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
 				"${PODS_ROOT}/Manifest.lock",
 			);
 			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
 			outputPaths = (
 				"$(DERIVED_FILE_DIR)/Pods-ATASafety-checkManifestLockResult.txt",
 			);
@@ -281,6 +287,7 @@
 				42E5937D240B91D400A796DB /* LocalNotificationManager.swift in Sources */,
 				422D239F23FB0E79007339C9 /* ATASafety.xcdatamodeld in Sources */,
 				422D239923FB0E79007339C9 /* ViewController.swift in Sources */,
+				50A0E5E6241FB89400968587 /* ReportingHomeViewController.swift in Sources */,
 				422B6B24240870320099D6EF /* EventViewController.swift in Sources */,
 				427FEB4D23FB5AB900531D90 /* SafetyChecklistFile.swift in Sources */,
 				426D4A8224046CFC009DABB4 /* EventTableViewController.swift in Sources */,
@@ -296,6 +303,7 @@
 				42B2E00123FE4F1C0021CBD8 /* UserInfoSettingsViewController.swift in Sources */,
 				42E1EDE72405037F00A5E3EC /* Event.swift in Sources */,
 				422D23AC23FB4B14007339C9 /* ChecklistTableViewController.swift in Sources */,
+				50A0E5E8241FBB6D00968587 /* ReportSubmittedViewController.swift in Sources */,
 				42FD8AF223FEED3D004DF553 /* AccountSettingsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
