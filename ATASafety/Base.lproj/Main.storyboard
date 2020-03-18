@@ -15,15 +15,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Notice: App is still Under Development. Many features are incomplete and/or not functional at the current moment." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" minimumFontSize="17" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="yS4-ie-xwj">
-                                <rect key="frame" x="10" y="431" width="394" height="120"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="120" id="Q2k-pO-diy"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ATA 2020 Safety App" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="20" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="2aw-MW-UsQ">
                                 <rect key="frame" x="10" y="359" width="394" height="42"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="35"/>
@@ -43,13 +34,9 @@
                             <constraint firstItem="wtZ-9u-XlY" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="100" id="AJh-TE-GcC"/>
                             <constraint firstItem="wtZ-9u-XlY" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="bIR-YZ-lc9"/>
                             <constraint firstItem="wtZ-9u-XlY" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="c3r-f3-7EH"/>
-                            <constraint firstItem="yS4-ie-xwj" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="10" id="d6m-ul-3bs"/>
                             <constraint firstItem="2aw-MW-UsQ" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="fcw-B6-pNq"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="2aw-MW-UsQ" secondAttribute="trailing" constant="10" id="hAH-s8-lcE"/>
-                            <constraint firstItem="yS4-ie-xwj" firstAttribute="top" secondItem="2aw-MW-UsQ" secondAttribute="bottom" constant="30" id="jmP-5p-0Id"/>
                             <constraint firstItem="2aw-MW-UsQ" firstAttribute="top" secondItem="wtZ-9u-XlY" secondAttribute="bottom" constant="15" id="nyd-CV-SRq"/>
-                            <constraint firstItem="yS4-ie-xwj" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="wHI-LU-zoY"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="yS4-ie-xwj" secondAttribute="trailing" constant="10" id="wfa-fH-QI7"/>
                             <constraint firstItem="2aw-MW-UsQ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="10" id="zFZ-19-5oq"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
@@ -341,31 +328,11 @@
                                 </attributedString>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="s6L-33-9Hb">
-                                <rect key="frame" x="92" y="152" width="230" height="43"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" secondItem="s6L-33-9Hb" secondAttribute="height" multiplier="230:43" id="5oF-GN-1So"/>
-                                    <constraint firstAttribute="height" constant="43" id="eYZ-5p-ZWG"/>
-                                    <constraint firstAttribute="width" constant="230" id="epC-qt-dM6"/>
-                                </constraints>
-                                <attributedString key="attributedText">
-                                    <fragment content="Pre-Release Version ">
-                                        <attributes>
-                                            <color key="NSColor" systemColor="systemRedColor" red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                            <font key="NSFont" metaFont="system" size="17"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
-                                        </attributes>
-                                    </fragment>
-                                </attributedString>
-                                <nil key="highlightedColor"/>
-                            </label>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
-                            <constraint firstItem="s6L-33-9Hb" firstAttribute="centerX" secondItem="WPr-yv-qBE" secondAttribute="centerX" id="AXA-Vn-jYR"/>
                             <constraint firstItem="Kme-hE-Ai7" firstAttribute="centerX" secondItem="WPr-yv-qBE" secondAttribute="centerX" id="Tck-1c-Qpr"/>
                             <constraint firstItem="Kme-hE-Ai7" firstAttribute="top" secondItem="6Pt-Fh-vq8" secondAttribute="top" constant="20" id="Wro-Dr-2QD"/>
-                            <constraint firstItem="s6L-33-9Hb" firstAttribute="centerY" secondItem="WPr-yv-qBE" secondAttribute="centerY" constant="-247.5" id="lbC-2c-c6a"/>
                             <constraint firstItem="cuJ-FO-6gm" firstAttribute="top" secondItem="Kme-hE-Ai7" secondAttribute="bottom" constant="10" id="tpP-ER-43r"/>
                             <constraint firstItem="cuJ-FO-6gm" firstAttribute="centerY" secondItem="WPr-yv-qBE" secondAttribute="centerY" constant="-183" id="yE8-1t-Dxj"/>
                             <constraint firstItem="cuJ-FO-6gm" firstAttribute="centerX" secondItem="WPr-yv-qBE" secondAttribute="centerX" id="yaY-jW-NFE"/>
@@ -535,7 +502,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <toolbar key="tableFooterView" opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="8C2-wf-RAh">
-                            <rect key="frame" x="0.0" y="162" width="414" height="44"/>
+                            <rect key="frame" x="0.0" y="108" width="414" height="44"/>
                             <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
                             <items>
                                 <barButtonItem title="Next" width="513" id="P61-yz-FkC">
