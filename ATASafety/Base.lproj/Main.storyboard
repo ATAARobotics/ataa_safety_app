@@ -538,7 +538,7 @@
                             <items>
                                 <barButtonItem title="Next" width="513" id="P61-yz-FkC">
                                     <connections>
-                                        <segue destination="Vbo-L0-kEO" kind="presentation" animates="NO" modalTransitionStyle="crossDissolve" id="SO8-bl-o46"/>
+                                        <segue destination="Vbo-L0-kEO" kind="presentation" animates="NO" id="SO8-bl-o46"/>
                                     </connections>
                                 </barButtonItem>
                             </items>
@@ -590,7 +590,11 @@
                                 <segue destination="Tp2-ej-fb5" kind="unwind" unwindAction="backToReportHomeWithUnwindSegue:" id="db0-MG-BNH"/>
                             </connections>
                         </barButtonItem>
-                        <barButtonItem key="rightBarButtonItem" title="Next" style="done" id="9ie-6y-r1j"/>
+                        <barButtonItem key="rightBarButtonItem" title="Next" style="done" id="9ie-6y-r1j">
+                            <connections>
+                                <segue destination="Vbo-L0-kEO" kind="presentation" animates="NO" id="NuM-Il-zb9"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                     <nil key="simulatedBottomBarMetrics"/>
                 </tableViewController>
@@ -833,4 +837,7 @@
         <image name="house.fill" catalog="system" width="64" height="52"/>
         <image name="location" catalog="system" width="64" height="56"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="SO8-bl-o46"/>
+    </inferredMetricsTieBreakers>
 </document>
