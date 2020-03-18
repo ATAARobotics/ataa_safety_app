@@ -95,7 +95,7 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                 <state key="normal" title="Start PIT Safety Checklist"/>
                                 <connections>
-                                    <segue destination="fOk-Oy-7P0" kind="presentation" modalTransitionStyle="coverVertical" id="cKq-1V-kw3"/>
+                                    <segue destination="DCw-Cb-Ikc" kind="presentation" modalTransitionStyle="coverVertical" id="cKq-1V-kw3"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -113,7 +113,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2Va-BD-KJx" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2710.144927536232" y="-64.285714285714278"/>
+            <point key="canvasLocation" x="780" y="-349"/>
         </scene>
         <!--Event Name-->
         <scene sceneID="h8j-0w-ZRU">
@@ -523,26 +523,8 @@
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" dataMode="prototypes" style="plain" separatorStyle="default" allowsSelection="NO" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="UOI-0B-mcG">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <navigationBar key="tableHeaderView" clipsSubviews="YES" contentMode="scaleToFill" id="QXh-cs-w6Y">
-                            <rect key="frame" x="0.0" y="0.0" width="414" height="56"/>
-                            <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
-                            <items>
-                                <navigationItem id="fyI-B9-g0s">
-                                    <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="wwc-5l-PYv">
-                                        <connections>
-                                            <segue destination="Tp2-ej-fb5" kind="unwind" unwindAction="backToReportHomeWithUnwindSegue:" id="db0-MG-BNH"/>
-                                        </connections>
-                                    </barButtonItem>
-                                    <barButtonItem key="rightBarButtonItem" title="Next" style="done" id="0uN-TT-qDY">
-                                        <connections>
-                                            <segue destination="Vbo-L0-kEO" kind="presentation" animates="NO" modalTransitionStyle="crossDissolve" id="SmR-Ny-SSe"/>
-                                        </connections>
-                                    </barButtonItem>
-                                </navigationItem>
-                            </items>
-                        </navigationBar>
                         <toolbar key="tableFooterView" opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="8C2-wf-RAh">
-                            <rect key="frame" x="0.0" y="218" width="414" height="44"/>
+                            <rect key="frame" x="0.0" y="162" width="414" height="44"/>
                             <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
                             <items>
                                 <barButtonItem title="Next" width="513" id="P61-yz-FkC">
@@ -554,7 +536,7 @@
                         </toolbar>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="checklistCell" rowHeight="106" id="eR0-LZ-R0U" customClass="ChecklistTableViewCell" customModule="ATASafety" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="84" width="414" height="106"/>
+                                <rect key="frame" x="0.0" y="28" width="414" height="106"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="eR0-LZ-R0U" id="Tqx-7X-ZeP" customClass="ChecklistTableViewCell" customModule="ATASafety" customModuleProvider="target">
                                     <rect key="frame" x="0.0" y="0.0" width="414" height="106"/>
@@ -594,14 +576,19 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" id="YbL-H2-dWF">
-                        <barButtonItem key="rightBarButtonItem" title="Next" id="9ie-6y-r1j"/>
+                        <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="wwc-5l-PYv">
+                            <connections>
+                                <segue destination="Tp2-ej-fb5" kind="unwind" unwindAction="backToReportHomeWithUnwindSegue:" id="db0-MG-BNH"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" title="Next" style="done" id="9ie-6y-r1j"/>
                     </navigationItem>
                     <nil key="simulatedBottomBarMetrics"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2U5-cA-8LA" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <exit id="Tp2-ej-fb5" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="2628.985507246377" y="-220.3125"/>
+            <point key="canvasLocation" x="2306" y="-350"/>
         </scene>
         <!--Checklist Submit View Controller-->
         <scene sceneID="b89-wC-kf9">
@@ -677,7 +664,7 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="MkC-cy-Lh0" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <exit id="07w-dw-9cf" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="3349.275362318841" y="-221.65178571428569"/>
+            <point key="canvasLocation" x="3159" y="-350"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="elh-R4-oZm">
@@ -753,6 +740,24 @@
             </objects>
             <point key="canvasLocation" x="-2420.289855072464" y="391.74107142857139"/>
         </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="mgE-En-rLE">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="DCw-Cb-Ikc" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="l00-pd-fxS">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="56"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="fOk-Oy-7P0" kind="relationship" relationship="rootViewController" id="SsD-sk-IML"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="YIi-fR-Czv" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1550.7246376811595" y="-350.22321428571428"/>
+        </scene>
     </scenes>
     <resources>
         <image name="SlackLogin" width="172" height="40"/>
@@ -764,7 +769,4 @@
         <image name="house.fill" catalog="system" width="64" height="52"/>
         <image name="location" catalog="system" width="64" height="56"/>
     </resources>
-    <inferredMetricsTieBreakers>
-        <segue reference="SmR-Ny-SSe"/>
-    </inferredMetricsTieBreakers>
 </document>
