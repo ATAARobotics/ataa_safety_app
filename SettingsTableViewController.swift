@@ -1,14 +1,14 @@
 //
-//  EventTableViewController.swift
+//  SettingsTableViewController.swift
 //  ATASafety
 //
-//  Created by Matthew Naruzny on 2020-02-24.
+//  Created by Albert Wood on 2020-03-17.
 //  Copyright © 2020 Matthew Naruzny. All rights reserved.
 //
 
 import UIKit
 
-class EventTableViewController: UITableViewController {
+class SettingsTableViewController: UITableViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -17,7 +17,7 @@ class EventTableViewController: UITableViewController {
         // self.clearsSelectionOnViewWillAppear = false
 
         // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-       // self.navigationItem.rightBarButtonItem = self.editButtonItem
+        // self.navigationItem.rightBarButtonItem = self.editButtonItem
     }
 
     // MARK: - Table view data source
@@ -29,31 +29,18 @@ class EventTableViewController: UITableViewController {
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return currentEvents.count
+        return 2
     }
 
-    
+    /*
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "eventCell", for: indexPath)
+        let cell = tableView.dequeueReusableCell(withIdentifier: "reuseIdentifier", for: indexPath)
 
         // Configure the cell...
-        cell.textLabel?.text = currentEvents[indexPath.item].display_name
-        
 
         return cell
     }
-    
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-         if segue.identifier == "eventDetailSegue" {
-             let destinationViewController = segue.destination as! EventDetailsTableViewController
-            destinationViewController.eventIndex = sender as? Int ?? 0
-        }
-    }
-    
-    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        performSegue(withIdentifier: "eventDetailSegue", sender: indexPath.item)
-    }
-    
+    */
 
     /*
     // Override to support conditional editing of the table view.
@@ -75,12 +62,12 @@ class EventTableViewController: UITableViewController {
     }
     */
 
-    
+    /*
     // Override to support rearranging the table view.
     override func tableView(_ tableView: UITableView, moveRowAt fromIndexPath: IndexPath, to: IndexPath) {
 
     }
-
+    */
 
     /*
     // Override to support conditional rearranging of the table view.
@@ -99,7 +86,7 @@ class EventTableViewController: UITableViewController {
         // Pass the selected object to the new view controller.
     }
     */
-    @IBAction func backToEventsSelector(unwindSegue: UIStoryboardSegue){
-        
+    @IBAction func settings(unwindSegue: UIStoryboardSegue){
     }
+
 }

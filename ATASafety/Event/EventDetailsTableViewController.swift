@@ -1,15 +1,18 @@
 //
-//  EventTableViewController.swift
+//  EventDetailsTableViewController.swift
 //  ATASafety
 //
-//  Created by Matthew Naruzny on 2020-02-24.
+//  Created by Albert Wood on 2020-03-17.
 //  Copyright © 2020 Matthew Naruzny. All rights reserved.
 //
 
 import UIKit
 
-class EventTableViewController: UITableViewController {
+class EventDetailsTableViewController: UITableViewController {
+    
+    var eventIndex : Int = 0
 
+    @IBOutlet weak var eventNameNavigationTitle: UINavigationItem!
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -17,41 +20,38 @@ class EventTableViewController: UITableViewController {
         // self.clearsSelectionOnViewWillAppear = false
 
         // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-       // self.navigationItem.rightBarButtonItem = self.editButtonItem
+        // self.navigationItem.rightBarButtonItem = self.editButtonItem
+        
+        
+        eventNameNavigationTitle.title = currentEvents[eventIndex].short_display_name
     }
 
     // MARK: - Table view data source
 
     override func numberOfSections(in tableView: UITableView) -> Int {
-        // #warning Incomplete implementation, return the number of sections
         return 1
     }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        // #warning Incomplete implementation, return the number of rows
-        return currentEvents.count
+        return 2
     }
 
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "eventCell", for: indexPath)
-
-        // Configure the cell...
-        cell.textLabel?.text = currentEvents[indexPath.item].display_name
-        
+        var cell : UITableViewCell
+        if(indexPath.item == 0){
+            // Location
+            cell = tableView.dequeueReusableCell(withIdentifier: "Location", for: indexPath)
+            cell.textLabel?.text = currentEvents[eventIndex].location
+        } else {
+            // Date
+            cell = tableView.dequeueReusableCell(withIdentifier: "Date", for: indexPath)
+            let formatter = DateFormatter()
+            formatter.dateFormat = "dd-MMM-yyyy"
+            cell.textLabel?.text = formatter.string(from: currentEvents[eventIndex].start_date)
+        }
 
         return cell
-    }
-    
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-         if segue.identifier == "eventDetailSegue" {
-             let destinationViewController = segue.destination as! EventDetailsTableViewController
-            destinationViewController.eventIndex = sender as? Int ?? 0
-        }
-    }
-    
-    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        performSegue(withIdentifier: "eventDetailSegue", sender: indexPath.item)
     }
     
 
@@ -75,12 +75,12 @@ class EventTableViewController: UITableViewController {
     }
     */
 
-    
+    /*
     // Override to support rearranging the table view.
     override func tableView(_ tableView: UITableView, moveRowAt fromIndexPath: IndexPath, to: IndexPath) {
 
     }
-
+    */
 
     /*
     // Override to support conditional rearranging of the table view.
@@ -99,7 +99,5 @@ class EventTableViewController: UITableViewController {
         // Pass the selected object to the new view controller.
     }
     */
-    @IBAction func backToEventsSelector(unwindSegue: UIStoryboardSegue){
-        
-    }
+
 }
