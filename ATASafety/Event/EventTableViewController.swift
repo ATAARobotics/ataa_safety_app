@@ -38,8 +38,20 @@ class EventTableViewController: UITableViewController {
 
         // Configure the cell...
         cell.textLabel?.text = currentEvents[indexPath.item].display_name
+        
 
         return cell
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+         if segue.identifier == "eventDetailSegue" {
+             let destinationViewController = segue.destination as! EventDetailsTableViewController
+            destinationViewController.eventIndex = sender as? Int ?? 0
+        }
+    }
+    
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        performSegue(withIdentifier: "eventDetailSegue", sender: indexPath.item)
     }
     
 

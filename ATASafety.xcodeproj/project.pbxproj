@@ -65,7 +65,7 @@
 		42E5937A240B4DB100A796DB /* CurrentEvents.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrentEvents.swift; sourceTree = "<group>"; };
 		42E5937C240B91D400A796DB /* LocalNotificationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalNotificationManager.swift; sourceTree = "<group>"; };
 		42FD8AF123FEED3D004DF553 /* AccountSettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountSettingsViewController.swift; sourceTree = "<group>"; };
-		5043915E2421C1C100AE6A32 /* EventDetailsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = EventDetailsTableViewController.swift; path = ATASafety/EventDetailsTableViewController.swift; sourceTree = SOURCE_ROOT; };
+		5043915E2421C1C100AE6A32 /* EventDetailsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = EventDetailsTableViewController.swift; path = ATASafety/Event/EventDetailsTableViewController.swift; sourceTree = SOURCE_ROOT; };
 		504391622421CCA800AE6A32 /* SettingsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsTableViewController.swift; sourceTree = SOURCE_ROOT; };
 		50A0E5E5241FB89400968587 /* ReportingHomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReportingHomeViewController.swift; sourceTree = "<group>"; };
 		7138E499686795BDB1FD3FE0 /* Pods_ATASafety.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ATASafety.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -460,7 +460,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.1.2;
-				PRODUCT_BUNDLE_IDENTIFIER = com.upnorthdevelopers.ATASafety;
+				PRODUCT_BUNDLE_IDENTIFIER = ca.ataarobotics.ATASafety;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
@@ -484,7 +484,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.1.2;
-				PRODUCT_BUNDLE_IDENTIFIER = com.upnorthdevelopers.ATASafety;
+				PRODUCT_BUNDLE_IDENTIFIER = ca.ataarobotics.ATASafety;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
