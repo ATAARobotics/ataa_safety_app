@@ -31,6 +31,7 @@
 		42E5937D240B91D400A796DB /* LocalNotificationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42E5937C240B91D400A796DB /* LocalNotificationManager.swift */; };
 		42FD8AF223FEED3D004DF553 /* AccountSettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42FD8AF123FEED3D004DF553 /* AccountSettingsViewController.swift */; };
 		5043915F2421C1C100AE6A32 /* EventDetailsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5043915E2421C1C100AE6A32 /* EventDetailsTableViewController.swift */; };
+		504391632421CCA800AE6A32 /* SettingsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 504391622421CCA800AE6A32 /* SettingsTableViewController.swift */; };
 		50A0E5E6241FB89400968587 /* ReportingHomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50A0E5E5241FB89400968587 /* ReportingHomeViewController.swift */; };
 		EB57CA653B859CFA13EF17F7 /* libPods-ATASafety.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A1D182DD0638F35236E83DB0 /* libPods-ATASafety.a */; };
 /* End PBXBuildFile section */
@@ -65,6 +66,7 @@
 		42E5937C240B91D400A796DB /* LocalNotificationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalNotificationManager.swift; sourceTree = "<group>"; };
 		42FD8AF123FEED3D004DF553 /* AccountSettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountSettingsViewController.swift; sourceTree = "<group>"; };
 		5043915E2421C1C100AE6A32 /* EventDetailsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = EventDetailsTableViewController.swift; path = ATASafety/EventDetailsTableViewController.swift; sourceTree = SOURCE_ROOT; };
+		504391622421CCA800AE6A32 /* SettingsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsTableViewController.swift; sourceTree = SOURCE_ROOT; };
 		50A0E5E5241FB89400968587 /* ReportingHomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReportingHomeViewController.swift; sourceTree = "<group>"; };
 		7138E499686795BDB1FD3FE0 /* Pods_ATASafety.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ATASafety.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A1D182DD0638F35236E83DB0 /* libPods-ATASafety.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ATASafety.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -152,6 +154,7 @@
 		42B2DFFF23FE4F000021CBD8 /* Settings */ = {
 			isa = PBXGroup;
 			children = (
+				504391622421CCA800AE6A32 /* SettingsTableViewController.swift */,
 				4260A7712406CB600078472A /* AboutPageViewController.swift */,
 				42B2E00023FE4F1C0021CBD8 /* UserInfoSettingsViewController.swift */,
 				42FD8AF123FEED3D004DF553 /* AccountSettingsViewController.swift */,
@@ -294,6 +297,7 @@
 				422D239523FB0E79007339C9 /* AppDelegate.swift in Sources */,
 				426653D523FC944E00CA6522 /* checklist.swift in Sources */,
 				422D239723FB0E79007339C9 /* SceneDelegate.swift in Sources */,
+				504391632421CCA800AE6A32 /* SettingsTableViewController.swift in Sources */,
 				4260CD11240C671E0095CDE4 /* SlackConnect.swift in Sources */,
 				426653D723FC981D00CA6522 /* ChecklistSubmitViewController.swift in Sources */,
 				42B2DFFA23FDD0CC0021CBD8 /* ChecklistTableViewCell.swift in Sources */,
