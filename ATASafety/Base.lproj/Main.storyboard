@@ -36,7 +36,7 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                 <state key="normal" title="Start PIT Safety Checklist"/>
                                 <connections>
-                                    <segue destination="DCw-Cb-Ikc" kind="presentation" modalTransitionStyle="coverVertical" id="cKq-1V-kw3"/>
+                                    <segue destination="fOk-Oy-7P0" kind="presentation" id="Yif-a5-y0j"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -54,7 +54,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2Va-BD-KJx" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="383" y="-331"/>
+            <point key="canvasLocation" x="1974" y="-350"/>
         </scene>
         <!--Event Name-->
         <scene sceneID="h8j-0w-ZRU">
@@ -455,7 +455,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <toolbar key="tableFooterView" opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="8C2-wf-RAh">
-                            <rect key="frame" x="0.0" y="162" width="414" height="44"/>
+                            <rect key="frame" x="0.0" y="108" width="414" height="44"/>
                             <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
                             <items>
                                 <barButtonItem title="Next" width="513" id="P61-yz-FkC">
@@ -629,6 +629,14 @@
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="l00-pd-fxS">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="56"/>
+        <!--Settings-->
+        <scene sceneID="BoK-dn-IUS">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="LHQ-vM-W6z" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Settings" image="gear" catalog="system" id="q8Y-L9-twU"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" largeTitles="YES" id="mu7-YC-IbG">
+                        <rect key="frame" x="0.0" y="44" width="414" height="96"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
@@ -669,14 +677,14 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ATA 2020 Safety App" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="20" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="7Lo-EL-6vR">
-                                <rect key="frame" x="10" y="395" width="394" height="42"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="ATA 2020 Safety App" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="20" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="7Lo-EL-6vR">
+                                <rect key="frame" x="10" y="430" width="394" height="42"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="35"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="exclamationmark.triangle" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="2Zi-6Q-Say">
-                                <rect key="frame" x="0.0" y="181" width="414" height="198"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="exclamationmark.triangle" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="2Zi-6Q-Say">
+                                <rect key="frame" x="0.0" y="216" width="414" height="198"/>
                                 <color key="tintColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="200" id="Osb-L7-Aaa"/>
@@ -698,12 +706,31 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="c8e-s0-F7x"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Home" image="house" catalog="system" selectedImage="house" id="Ry5-A2-Iag"/>
-                    <navigationItem key="navigationItem" title="Home" largeTitleDisplayMode="always" id="45U-sO-s7X"/>
+                    <tabBarItem key="tabBarItem" title="Home" image="house" catalog="system" id="JNE-by-QFV"/>
+                    <navigationItem key="navigationItem" title="Home" id="45U-sO-s7X"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="e0F-Xg-AcT" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-846" y="-1090"/>
+            <point key="canvasLocation" x="780" y="-1122"/>
+        </scene>
+        <!--Reporting-->
+        <scene sceneID="wxb-fs-c9s">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="jx5-Wv-tJU" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Reporting" image="exclamationmark.bubble" catalog="system" id="AAv-NT-9q5"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" largeTitles="YES" id="dEF-np-x4B">
+                        <rect key="frame" x="0.0" y="44" width="414" height="96"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="c29-ng-bZY" kind="relationship" relationship="rootViewController" id="uxd-sK-Q3Q"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="IdN-7w-TR9" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="779.71014492753625" y="-349.55357142857139"/>
         </scene>
     </scenes>
     <resources>
