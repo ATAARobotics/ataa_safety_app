@@ -68,7 +68,7 @@
 		42FD8AF123FEED3D004DF553 /* AccountSettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountSettingsViewController.swift; sourceTree = "<group>"; };
 		5042032824230F1000C3E599 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		5043915E2421C1C100AE6A32 /* EventDetailsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = EventDetailsTableViewController.swift; path = ATASafety/Event/EventDetailsTableViewController.swift; sourceTree = SOURCE_ROOT; };
-		504391622421CCA800AE6A32 /* SettingsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsTableViewController.swift; sourceTree = SOURCE_ROOT; };
+		504391622421CCA800AE6A32 /* SettingsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = SettingsTableViewController.swift; path = ATASafety/Settings/SettingsTableViewController.swift; sourceTree = SOURCE_ROOT; };
 		50A0E5E5241FB89400968587 /* ReportingHomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReportingHomeViewController.swift; sourceTree = "<group>"; };
 		7138E499686795BDB1FD3FE0 /* Pods_ATASafety.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ATASafety.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A1D182DD0638F35236E83DB0 /* libPods-ATASafety.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ATASafety.a"; sourceTree = BUILT_PRODUCTS_DIR; };
