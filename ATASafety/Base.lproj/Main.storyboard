@@ -609,10 +609,10 @@
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBar>
                     <connections>
+                        <segue destination="fdE-ll-21Y" kind="relationship" relationship="viewControllers" id="NkE-gY-hAE"/>
                         <segue destination="dsH-oo-N4g" kind="relationship" relationship="viewControllers" id="cIJ-go-T2r"/>
                         <segue destination="jx5-Wv-tJU" kind="relationship" relationship="viewControllers" id="GKx-aH-U4L"/>
                         <segue destination="LHQ-vM-W6z" kind="relationship" relationship="viewControllers" id="eSF-nd-BFR"/>
-                        <segue destination="fdE-ll-21Y" kind="relationship" relationship="viewControllers" id="NkE-gY-hAE"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Eo4-jE-WSV" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -694,7 +694,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="c8e-s0-F7x"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item" id="JNE-by-QFV"/>
+                    <tabBarItem key="tabBarItem" title="Home" image="house" catalog="system" id="JNE-by-QFV"/>
                     <navigationItem key="navigationItem" title="Home" id="45U-sO-s7X"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="e0F-Xg-AcT" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -728,6 +728,7 @@
         <image name="exclamationmark.bubble" catalog="system" width="64" height="54"/>
         <image name="exclamationmark.triangle" catalog="system" width="64" height="56"/>
         <image name="gear" catalog="system" width="64" height="58"/>
+        <image name="house" catalog="system" width="64" height="54"/>
         <image name="info" catalog="system" width="46" height="64"/>
         <image name="location" catalog="system" width="64" height="56"/>
         <image name="person" catalog="system" width="64" height="58"/>
