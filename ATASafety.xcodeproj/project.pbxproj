@@ -30,6 +30,7 @@
 		42E5937B240B4DB100A796DB /* CurrentEvents.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42E5937A240B4DB100A796DB /* CurrentEvents.swift */; };
 		42E5937D240B91D400A796DB /* LocalNotificationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42E5937C240B91D400A796DB /* LocalNotificationManager.swift */; };
 		42FD8AF223FEED3D004DF553 /* AccountSettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42FD8AF123FEED3D004DF553 /* AccountSettingsViewController.swift */; };
+		5042032924230F1000C3E599 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5042032824230F1000C3E599 /* HomeViewController.swift */; };
 		5043915F2421C1C100AE6A32 /* EventDetailsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5043915E2421C1C100AE6A32 /* EventDetailsTableViewController.swift */; };
 		504391632421CCA800AE6A32 /* SettingsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 504391622421CCA800AE6A32 /* SettingsTableViewController.swift */; };
 		50A0E5E6241FB89400968587 /* ReportingHomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50A0E5E5241FB89400968587 /* ReportingHomeViewController.swift */; };
@@ -65,6 +66,7 @@
 		42E5937A240B4DB100A796DB /* CurrentEvents.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrentEvents.swift; sourceTree = "<group>"; };
 		42E5937C240B91D400A796DB /* LocalNotificationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalNotificationManager.swift; sourceTree = "<group>"; };
 		42FD8AF123FEED3D004DF553 /* AccountSettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountSettingsViewController.swift; sourceTree = "<group>"; };
+		5042032824230F1000C3E599 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		5043915E2421C1C100AE6A32 /* EventDetailsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = EventDetailsTableViewController.swift; path = ATASafety/Event/EventDetailsTableViewController.swift; sourceTree = SOURCE_ROOT; };
 		504391622421CCA800AE6A32 /* SettingsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsTableViewController.swift; sourceTree = SOURCE_ROOT; };
 		50A0E5E5241FB89400968587 /* ReportingHomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReportingHomeViewController.swift; sourceTree = "<group>"; };
@@ -109,6 +111,7 @@
 			children = (
 				4260CD10240C671E0095CDE4 /* SlackConnect.swift */,
 				426D4A75240460FD009DABB4 /* KeysSettings.swift */,
+				5042032724230EDB00C3E599 /* Home */,
 				426D4A8024046CEB009DABB4 /* Event */,
 				42B2DFFF23FE4F000021CBD8 /* Settings */,
 				422D23AD23FB4B18007339C9 /* Checklist */,
@@ -179,6 +182,14 @@
 				25EAC9EF72A5DE24E674B95C /* Pods-ATASafety.release.xcconfig */,
 			);
 			path = Pods;
+			sourceTree = "<group>";
+		};
+		5042032724230EDB00C3E599 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				5042032824230F1000C3E599 /* HomeViewController.swift */,
+			);
+			path = Home;
 			sourceTree = "<group>";
 		};
 		F30506175CF98356082C3655 /* Frameworks */ = {
@@ -289,6 +300,7 @@
 				422D239923FB0E79007339C9 /* ViewController.swift in Sources */,
 				50A0E5E6241FB89400968587 /* ReportingHomeViewController.swift in Sources */,
 				427FEB4D23FB5AB900531D90 /* SafetyChecklistFile.swift in Sources */,
+				5042032924230F1000C3E599 /* HomeViewController.swift in Sources */,
 				426D4A8224046CFC009DABB4 /* EventTableViewController.swift in Sources */,
 				4260A7722406CB600078472A /* AboutPageViewController.swift in Sources */,
 				5043915F2421C1C100AE6A32 /* EventDetailsTableViewController.swift in Sources */,

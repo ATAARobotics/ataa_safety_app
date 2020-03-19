@@ -9,9 +9,14 @@
 import UIKit
 
 class EventTableViewController: UITableViewController {
+    
+    override func viewDidAppear(_ animated: Bool) {
+        self.navigationController?.navigationBar.topItem?.title = "Events";
+    }
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
 
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false

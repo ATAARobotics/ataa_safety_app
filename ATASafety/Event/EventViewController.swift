@@ -1,21 +1,22 @@
 //
-//  ReportingHomeViewController.swift
+//  EventViewController.swift
 //  ATASafety
 //
-//  Created by Albert Wood on 2020-03-16.
+//  Created by Matthew Naruzny on 2020-02-27.
 //  Copyright © 2020 Matthew Naruzny. All rights reserved.
 //
 
 import UIKit
 
-class ReportingHomeViewController: UIViewController {
-    override func viewDidAppear(_ animated: Bool) {
-        self.navigationController?.navigationBar.topItem?.title = "Reporting";
-    }
+class EventViewController: UIViewController {
 
+    @IBOutlet weak var eventNameLabel: UILabel!
+    @IBOutlet weak var locationLabel: UILabel!
+    @IBOutlet weak var startDateLabel: UILabel!
+    @IBOutlet weak var endDateLabel: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        
 
         // Do any additional setup after loading the view.
     }
@@ -30,5 +31,5 @@ class ReportingHomeViewController: UIViewController {
         // Pass the selected object to the new view controller.
     }
     */
-@IBAction func backToReportHome(unwindSegue: UIStoryboardSegue){}
+
 }

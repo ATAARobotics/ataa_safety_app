@@ -1,28 +1,23 @@
 //
-//  SettingsTableViewController.swift
+//  EventTableViewController.swift
 //  ATASafety
 //
-//  Created by Albert Wood on 2020-03-17.
+//  Created by Matthew Naruzny on 2020-02-24.
 //  Copyright © 2020 Matthew Naruzny. All rights reserved.
 //
 
 import UIKit
 
-class SettingsTableViewController: UITableViewController {
-    
-    override func viewDidAppear(_ animated: Bool) {
-        self.navigationController?.navigationBar.topItem?.title = "Settings";
-    }
+class EventTableViewController: UITableViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        
 
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
 
         // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-        // self.navigationItem.rightBarButtonItem = self.editButtonItem
+        self.navigationItem.rightBarButtonItem = self.editButtonItem
     }
 
     // MARK: - Table view data source
@@ -34,18 +29,19 @@ class SettingsTableViewController: UITableViewController {
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return 2
+        return currentEvents.count
     }
 
-    /*
+    
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "reuseIdentifier", for: indexPath)
+        let cell = tableView.dequeueReusableCell(withIdentifier: "eventCell", for: indexPath)
 
         // Configure the cell...
+        cell.textLabel?.text = currentEvents[indexPath.item].display_name
 
         return cell
     }
-    */
+    
 
     /*
     // Override to support conditional editing of the table view.
@@ -91,7 +87,5 @@ class SettingsTableViewController: UITableViewController {
         // Pass the selected object to the new view controller.
     }
     */
-    @IBAction func settings(unwindSegue: UIStoryboardSegue){
-    }
 
 }

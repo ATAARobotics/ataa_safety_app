@@ -1,28 +1,30 @@
 //
-//  SettingsTableViewController.swift
+//  ChecklistTableViewController.swift
 //  ATASafety
 //
-//  Created by Albert Wood on 2020-03-17.
+//  Created by Matthew Naruzny on 2020-02-17.
 //  Copyright © 2020 Matthew Naruzny. All rights reserved.
 //
 
 import UIKit
+import FirebaseAnalytics
 
-class SettingsTableViewController: UITableViewController {
+class ChecklistTableViewController: UITableViewController {
     
-    override func viewDidAppear(_ animated: Bool) {
-        self.navigationController?.navigationBar.topItem?.title = "Settings";
-    }
-
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        Analytics.setScreenName("Checklist View", screenClass: "Checklist Table View Controller")
 
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
 
         // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
         // self.navigationItem.rightBarButtonItem = self.editButtonItem
+        
+        for n in 0...(safetyChecklistItems.count-1){
+            safetyChecklistValues[n] = 1
+        }
     }
 
     // MARK: - Table view data source
@@ -34,18 +36,23 @@ class SettingsTableViewController: UITableViewController {
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return 2
+        return safetyChecklistItems.count
     }
 
-    /*
+    
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "reuseIdentifier", for: indexPath)
-
+        let cell = tableView.dequeueReusableCell(withIdentifier: "checklistCell", for: indexPath) as! ChecklistTableViewCell
         // Configure the cell...
-
+        cell.itemLabel.text = safetyChecklistItems[indexPath.item]
+        cell.resultSegmentedControl.selectedSegmentIndex = safetyChecklistValues[indexPath.item]!
+        cell.cellID = indexPath.item
         return cell
     }
-    */
+    
+    override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+           return 115
+       }
+    
 
     /*
     // Override to support conditional editing of the table view.
@@ -91,7 +98,5 @@ class SettingsTableViewController: UITableViewController {
         // Pass the selected object to the new view controller.
     }
     */
-    @IBAction func settings(unwindSegue: UIStoryboardSegue){
-    }
 
 }

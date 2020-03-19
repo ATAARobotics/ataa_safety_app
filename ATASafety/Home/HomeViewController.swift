@@ -1,22 +1,22 @@
 //
-//  ReportingHomeViewController.swift
+//  HomeViewController.swift
 //  ATASafety
 //
-//  Created by Albert Wood on 2020-03-16.
+//  Created by Albert Wood on 2020-03-18.
 //  Copyright © 2020 Matthew Naruzny. All rights reserved.
 //
 
 import UIKit
 
-class ReportingHomeViewController: UIViewController {
+class HomeViewController: UIViewController {
     override func viewDidAppear(_ animated: Bool) {
-        self.navigationController?.navigationBar.topItem?.title = "Reporting";
+        self.navigationController?.navigationBar.topItem?.title = "Home";
     }
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        
 
+        
         // Do any additional setup after loading the view.
     }
     
@@ -30,5 +30,5 @@ class ReportingHomeViewController: UIViewController {
         // Pass the selected object to the new view controller.
     }
     */
-@IBAction func backToReportHome(unwindSegue: UIStoryboardSegue){}
+
 }
