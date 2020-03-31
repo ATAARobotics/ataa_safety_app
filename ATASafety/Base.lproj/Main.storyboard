@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="2mk-CQ-6rU">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="2mk-CQ-6rU">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16086"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -16,36 +17,30 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Competition Reporting" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QAa-qo-dvD">
-                                <rect key="frame" x="68" y="215" width="278" height="53"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" secondItem="QAa-qo-dvD" secondAttribute="height" multiplier="278:53" id="A46-ra-jY7"/>
-                                    <constraint firstAttribute="width" constant="278" id="bLe-OG-IDQ"/>
-                                    <constraint firstAttribute="height" constant="53" id="biB-ea-yjE"/>
-                                </constraints>
+                                <rect key="frame" x="20" y="190" width="374" height="31.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="26"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SI9-Rx-KMt">
-                                <rect key="frame" x="99.5" y="285" width="215" height="51"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="51" id="43b-1j-ozZ"/>
-                                    <constraint firstAttribute="width" constant="215" id="Whq-Tm-P0t"/>
-                                    <constraint firstAttribute="width" secondItem="SI9-Rx-KMt" secondAttribute="height" multiplier="215:51" id="aKs-Uk-PHR"/>
-                                </constraints>
+                                <rect key="frame" x="20" y="241.5" width="374" height="34"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                 <state key="normal" title="Start PIT Safety Checklist"/>
                                 <connections>
-                                    <segue destination="fOk-Oy-7P0" kind="presentation" id="Yif-a5-y0j"/>
+                                    <segue destination="rYt-01-qUQ" kind="presentation" modalTransitionStyle="coverVertical" id="Yif-a5-y0j"/>
                                 </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="SI9-Rx-KMt" firstAttribute="centerY" secondItem="Une-Wr-4Ck" secondAttribute="centerY" constant="-137.5" id="D3e-9d-W1n"/>
-                            <constraint firstItem="QAa-qo-dvD" firstAttribute="centerY" secondItem="Une-Wr-4Ck" secondAttribute="centerY" constant="-206.5" id="Gy7-fg-lmY"/>
+                            <constraint firstItem="4Hz-Ns-ENV" firstAttribute="trailing" secondItem="SI9-Rx-KMt" secondAttribute="trailing" constant="20" id="HK2-73-WrO"/>
+                            <constraint firstItem="SI9-Rx-KMt" firstAttribute="top" secondItem="QAa-qo-dvD" secondAttribute="bottom" constant="20" id="ToQ-3k-WWE"/>
                             <constraint firstItem="QAa-qo-dvD" firstAttribute="centerX" secondItem="Une-Wr-4Ck" secondAttribute="centerX" id="YAp-ry-1Or"/>
                             <constraint firstItem="SI9-Rx-KMt" firstAttribute="centerX" secondItem="Une-Wr-4Ck" secondAttribute="centerX" id="dBD-2I-6Ae"/>
+                            <constraint firstItem="QAa-qo-dvD" firstAttribute="top" secondItem="4Hz-Ns-ENV" secondAttribute="top" constant="50" id="l0Y-jT-zB4"/>
+                            <constraint firstItem="QAa-qo-dvD" firstAttribute="leading" secondItem="4Hz-Ns-ENV" secondAttribute="leading" constant="20" id="pZV-Rt-4uP"/>
+                            <constraint firstItem="SI9-Rx-KMt" firstAttribute="leading" secondItem="4Hz-Ns-ENV" secondAttribute="leading" constant="20" id="qb4-Z2-YVi"/>
+                            <constraint firstItem="4Hz-Ns-ENV" firstAttribute="trailing" secondItem="QAa-qo-dvD" secondAttribute="trailing" constant="20" id="xja-rX-zmy"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="4Hz-Ns-ENV"/>
                     </view>
@@ -259,22 +254,14 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ATA Safety App v_____" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Kme-hE-Ai7">
-                                <rect key="frame" x="123.5" y="160" width="167" height="60"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="167" id="Qul-Yv-f1K"/>
-                                </constraints>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ATA Safety App v_____" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Kme-hE-Ai7">
+                                <rect key="frame" x="20" y="160" width="374" height="20.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cuJ-FO-6gm">
-                                <rect key="frame" x="91" y="230" width="232" height="70"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="232" id="7Dw-Qg-fJf"/>
-                                    <constraint firstAttribute="height" constant="70" id="Su7-4K-QeI"/>
-                                    <constraint firstAttribute="width" secondItem="cuJ-FO-6gm" secondAttribute="height" multiplier="116:35" id="cnS-PM-YcG"/>
-                                </constraints>
+                                <rect key="frame" x="20" y="205.5" width="374" height="20.5"/>
                                 <attributedString key="attributedText">
                                     <fragment content="Developed and Maintained by Matthew Naruzny">
                                         <attributes>
@@ -288,10 +275,13 @@
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
+                            <constraint firstItem="6Pt-Fh-vq8" firstAttribute="trailing" secondItem="Kme-hE-Ai7" secondAttribute="trailing" constant="20" id="AAP-bR-VYv"/>
                             <constraint firstItem="Kme-hE-Ai7" firstAttribute="centerX" secondItem="WPr-yv-qBE" secondAttribute="centerX" id="Tck-1c-Qpr"/>
                             <constraint firstItem="Kme-hE-Ai7" firstAttribute="top" secondItem="6Pt-Fh-vq8" secondAttribute="top" constant="20" id="Wro-Dr-2QD"/>
-                            <constraint firstItem="cuJ-FO-6gm" firstAttribute="top" secondItem="Kme-hE-Ai7" secondAttribute="bottom" constant="10" id="tpP-ER-43r"/>
-                            <constraint firstItem="cuJ-FO-6gm" firstAttribute="centerY" secondItem="WPr-yv-qBE" secondAttribute="centerY" constant="-183" id="yE8-1t-Dxj"/>
+                            <constraint firstItem="6Pt-Fh-vq8" firstAttribute="trailing" secondItem="cuJ-FO-6gm" secondAttribute="trailing" constant="20" id="gBl-gb-bae"/>
+                            <constraint firstItem="Kme-hE-Ai7" firstAttribute="leading" secondItem="6Pt-Fh-vq8" secondAttribute="leading" constant="20" id="iGj-IY-G3w"/>
+                            <constraint firstItem="cuJ-FO-6gm" firstAttribute="leading" secondItem="6Pt-Fh-vq8" secondAttribute="leading" constant="20" id="nUz-mT-HxC"/>
+                            <constraint firstItem="cuJ-FO-6gm" firstAttribute="top" secondItem="Kme-hE-Ai7" secondAttribute="bottom" constant="25" id="tpP-ER-43r"/>
                             <constraint firstItem="cuJ-FO-6gm" firstAttribute="centerX" secondItem="WPr-yv-qBE" secondAttribute="centerX" id="yaY-jW-NFE"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Pt-Fh-vq8"/>
@@ -303,7 +293,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9wH-PJ-q98" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4438" y="1361"/>
+            <point key="canvasLocation" x="4437.68115942029" y="1360.0446428571429"/>
         </scene>
         <!--Account-->
         <scene sceneID="9i4-xi-hIe">
@@ -447,12 +437,12 @@
         <!--Checklist Table View Controller-->
         <scene sceneID="SS7-9m-Ixc">
             <objects>
-                <tableViewController extendedLayoutIncludesOpaqueBars="YES" modalTransitionStyle="partialCurl" id="fOk-Oy-7P0" customClass="ChecklistTableViewController" customModule="ATASafety" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController extendedLayoutIncludesOpaqueBars="YES" id="fOk-Oy-7P0" customClass="ChecklistTableViewController" customModule="ATASafety" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" dataMode="prototypes" style="plain" separatorStyle="default" allowsSelection="NO" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="UOI-0B-mcG">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <toolbar key="tableFooterView" opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="8C2-wf-RAh">
-                            <rect key="frame" x="0.0" y="108" width="414" height="44"/>
+                            <rect key="frame" x="0.0" y="162" width="414" height="44"/>
                             <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
                             <items>
                                 <barButtonItem title="Next" width="513" id="P61-yz-FkC">
@@ -520,7 +510,7 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2U5-cA-8LA" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <exit id="Tp2-ej-fb5" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="3215.9420289855075" y="-350.22321428571428"/>
+            <point key="canvasLocation" x="4250.7246376811599" y="-349.55357142857139"/>
         </scene>
         <!--Checklist Submit View Controller-->
         <scene sceneID="b89-wC-kf9">
@@ -596,7 +586,7 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="MkC-cy-Lh0" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <exit id="07w-dw-9cf" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="4068.115942028986" y="-350.22321428571428"/>
+            <point key="canvasLocation" x="4978.2608695652179" y="-350.22321428571428"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="elh-R4-oZm">
@@ -667,13 +657,14 @@
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="ATA 2020 Safety App" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="20" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="7Lo-EL-6vR">
                                 <rect key="frame" x="10" y="430" width="394" height="42"/>
+                                <color key="tintColor" name="DarkLight Mode Colours"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="35"/>
-                                <nil key="textColor"/>
+                                <color key="textColor" name="DarkLight Mode Colours"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="exclamationmark.triangle" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="2Zi-6Q-Say">
-                                <rect key="frame" x="0.0" y="216" width="414" height="198"/>
-                                <color key="tintColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <rect key="frame" x="-1" y="216" width="414" height="198"/>
+                                <color key="tintColor" name="DarkLight Mode Colours"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="200" id="Osb-L7-Aaa"/>
                                 </constraints>
@@ -720,21 +711,42 @@
             </objects>
             <point key="canvasLocation" x="779.71014492753625" y="-349.55357142857139"/>
         </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="9O0-S9-StH">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="rYt-01-qUQ" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="529-JV-hl4">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="56"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="fOk-Oy-7P0" kind="relationship" relationship="rootViewController" id="Afm-B8-wVx"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ZJd-43-9CS" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3340.579710144928" y="-350.22321428571428"/>
+        </scene>
     </scenes>
-    <resources>
-        <image name="SlackLogin" width="172" height="40"/>
-        <image name="calendar" catalog="system" width="64" height="52"/>
-        <image name="calendar.circle" catalog="system" width="64" height="60"/>
-        <image name="exclamationmark.bubble" catalog="system" width="64" height="54"/>
-        <image name="exclamationmark.triangle" catalog="system" width="64" height="56"/>
-        <image name="gear" catalog="system" width="64" height="58"/>
-        <image name="house" catalog="system" width="64" height="54"/>
-        <image name="info" catalog="system" width="46" height="64"/>
-        <image name="location" catalog="system" width="64" height="56"/>
-        <image name="person" catalog="system" width="64" height="58"/>
-        <image name="person.icloud" catalog="system" width="64" height="44"/>
-    </resources>
     <inferredMetricsTieBreakers>
         <segue reference="NuM-Il-zb9"/>
     </inferredMetricsTieBreakers>
+    <resources>
+        <image name="SlackLogin" width="172" height="40"/>
+        <image name="calendar" catalog="system" width="128" height="106"/>
+        <image name="calendar.circle" catalog="system" width="128" height="121"/>
+        <image name="exclamationmark.bubble" catalog="system" width="128" height="110"/>
+        <image name="exclamationmark.triangle" catalog="system" width="128" height="112"/>
+        <image name="gear" catalog="system" width="128" height="119"/>
+        <image name="house" catalog="system" width="128" height="110"/>
+        <image name="info" catalog="system" width="93" height="128"/>
+        <image name="location" catalog="system" width="128" height="115"/>
+        <image name="person" catalog="system" width="128" height="117"/>
+        <image name="person.icloud" catalog="system" width="128" height="88"/>
+        <namedColor name="DarkLight Mode Colours">
+            <color red="1" green="0.66496391246069697" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
 </document>
