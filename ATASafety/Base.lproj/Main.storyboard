@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="2mk-CQ-6rU">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="2mk-CQ-6rU">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16086"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
         <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -442,7 +442,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <toolbar key="tableFooterView" opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="8C2-wf-RAh">
-                            <rect key="frame" x="0.0" y="162" width="414" height="44"/>
+                            <rect key="frame" x="0.0" y="108" width="414" height="44"/>
                             <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
                             <items>
                                 <barButtonItem title="Next" width="513" id="P61-yz-FkC">
@@ -655,33 +655,32 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="ATA 2020 Safety App" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="20" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="7Lo-EL-6vR">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ATA 2020 Safety App" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="20" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="7Lo-EL-6vR">
                                 <rect key="frame" x="10" y="430" width="394" height="42"/>
                                 <color key="tintColor" name="DarkLight Mode Colours"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="394" id="RKx-IX-N6Q"/>
+                                    <constraint firstAttribute="height" constant="42" id="bTM-in-gGO"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="35"/>
                                 <color key="textColor" name="DarkLight Mode Colours"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="exclamationmark.triangle" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="2Zi-6Q-Say">
-                                <rect key="frame" x="-1" y="216" width="414" height="198"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="exclamationmark.triangle" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="2Zi-6Q-Say">
+                                <rect key="frame" x="0.0" y="216" width="414" height="198"/>
                                 <color key="tintColor" name="DarkLight Mode Colours"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="200" id="Osb-L7-Aaa"/>
+                                    <constraint firstAttribute="width" constant="414" id="BTa-a4-2JE"/>
+                                    <constraint firstAttribute="height" constant="200" id="hiL-Ki-leF"/>
                                 </constraints>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemGroupedBackgroundColor" red="0.94901960780000005" green="0.94901960780000005" blue="0.96862745100000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="7Lo-EL-6vR" firstAttribute="top" secondItem="2Zi-6Q-Say" secondAttribute="bottom" constant="15" id="97r-Pz-DF0"/>
-                            <constraint firstItem="7Lo-EL-6vR" firstAttribute="top" secondItem="2Zi-6Q-Say" secondAttribute="bottom" constant="15" id="GiN-G9-mnY"/>
-                            <constraint firstItem="2Zi-6Q-Say" firstAttribute="leading" secondItem="c8e-s0-F7x" secondAttribute="leading" id="J2u-Co-gGc"/>
-                            <constraint firstItem="7Lo-EL-6vR" firstAttribute="leading" secondItem="c8e-s0-F7x" secondAttribute="leading" constant="10" id="ZvU-Tx-whg"/>
-                            <constraint firstItem="2Zi-6Q-Say" firstAttribute="trailing" secondItem="c8e-s0-F7x" secondAttribute="trailing" id="aoL-Wt-PpV"/>
-                            <constraint firstItem="7Lo-EL-6vR" firstAttribute="top" secondItem="2Zi-6Q-Say" secondAttribute="bottom" constant="15" id="d40-j6-fcM"/>
-                            <constraint firstItem="2Zi-6Q-Say" firstAttribute="top" secondItem="c8e-s0-F7x" secondAttribute="top" constant="40" id="gAN-zX-UtM"/>
-                            <constraint firstItem="7Lo-EL-6vR" firstAttribute="leading" secondItem="c8e-s0-F7x" secondAttribute="leading" constant="10" id="laW-2E-jWZ"/>
-                            <constraint firstItem="c8e-s0-F7x" firstAttribute="trailing" secondItem="7Lo-EL-6vR" secondAttribute="trailing" constant="10" id="uOJ-WY-eZE"/>
-                            <constraint firstItem="c8e-s0-F7x" firstAttribute="trailing" secondItem="7Lo-EL-6vR" secondAttribute="trailing" constant="10" id="voh-eQ-tBW"/>
+                            <constraint firstItem="2Zi-6Q-Say" firstAttribute="centerX" secondItem="xHE-JS-XR2" secondAttribute="centerX" id="1fW-ll-Hzw"/>
+                            <constraint firstItem="7Lo-EL-6vR" firstAttribute="centerY" secondItem="xHE-JS-XR2" secondAttribute="centerY" constant="3" id="2h2-we-oEE"/>
+                            <constraint firstItem="7Lo-EL-6vR" firstAttribute="centerX" secondItem="xHE-JS-XR2" secondAttribute="centerX" id="Zwn-hl-xiB"/>
+                            <constraint firstItem="2Zi-6Q-Say" firstAttribute="centerY" secondItem="xHE-JS-XR2" secondAttribute="centerY" constant="-133" id="tWW-77-mpO"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="c8e-s0-F7x"/>
                     </view>
@@ -730,23 +729,23 @@
             <point key="canvasLocation" x="3340.579710144928" y="-350.22321428571428"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="SlackLogin" width="172" height="40"/>
+        <image name="calendar" catalog="system" width="64" height="52"/>
+        <image name="calendar.circle" catalog="system" width="64" height="60"/>
+        <image name="exclamationmark.bubble" catalog="system" width="64" height="54"/>
+        <image name="exclamationmark.triangle" catalog="system" width="64" height="56"/>
+        <image name="gear" catalog="system" width="64" height="58"/>
+        <image name="house" catalog="system" width="64" height="54"/>
+        <image name="info" catalog="system" width="46" height="64"/>
+        <image name="location" catalog="system" width="64" height="56"/>
+        <image name="person" catalog="system" width="64" height="58"/>
+        <image name="person.icloud" catalog="system" width="64" height="44"/>
+        <namedColor name="DarkLight Mode Colours">
+            <color red="1" green="0.66500002145767212" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
     <inferredMetricsTieBreakers>
         <segue reference="NuM-Il-zb9"/>
     </inferredMetricsTieBreakers>
-    <resources>
-        <image name="SlackLogin" width="172" height="40"/>
-        <image name="calendar" catalog="system" width="128" height="106"/>
-        <image name="calendar.circle" catalog="system" width="128" height="121"/>
-        <image name="exclamationmark.bubble" catalog="system" width="128" height="110"/>
-        <image name="exclamationmark.triangle" catalog="system" width="128" height="112"/>
-        <image name="gear" catalog="system" width="128" height="119"/>
-        <image name="house" catalog="system" width="128" height="110"/>
-        <image name="info" catalog="system" width="93" height="128"/>
-        <image name="location" catalog="system" width="128" height="115"/>
-        <image name="person" catalog="system" width="128" height="117"/>
-        <image name="person.icloud" catalog="system" width="128" height="88"/>
-        <namedColor name="DarkLight Mode Colours">
-            <color red="1" green="0.66496391246069697" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </namedColor>
-    </resources>
 </document>
