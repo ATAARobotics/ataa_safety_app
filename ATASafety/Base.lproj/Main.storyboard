@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="2mk-CQ-6rU">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="2mk-CQ-6rU">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16086"/>
         <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -400,29 +400,23 @@
                         <constraints>
                             <constraint firstItem="nw3-Or-xac" firstAttribute="trailing" secondItem="Lfw-iU-Chk" secondAttribute="trailing" constant="-10" id="3a4-8v-3bN"/>
                             <constraint firstItem="ejc-Om-FSo" firstAttribute="leading" secondItem="Lfw-iU-Chk" secondAttribute="leading" constant="15" id="5oG-v2-pik"/>
+                            <constraint firstItem="2yb-1v-Z2f" firstAttribute="trailing" secondItem="ejc-Om-FSo" secondAttribute="trailing" id="7em-96-d6X"/>
                             <constraint firstItem="Y1u-wA-HmC" firstAttribute="leading" secondItem="Lfw-iU-Chk" secondAttribute="leading" constant="15" id="8S7-iS-JGf"/>
                             <constraint firstItem="ejc-Om-FSo" firstAttribute="trailing" secondItem="Lfw-iU-Chk" secondAttribute="trailing" constant="-10" id="DBm-RU-b29"/>
                             <constraint firstItem="ejc-Om-FSo" firstAttribute="top" secondItem="BxB-Ci-R4d" secondAttribute="bottom" constant="8" id="KmK-Wo-4dK"/>
-                            <constraint firstItem="2yb-1v-Z2f" firstAttribute="leading" secondItem="Lfw-iU-Chk" secondAttribute="leading" constant="15" id="MMO-gV-yN0"/>
+                            <constraint firstItem="2yb-1v-Z2f" firstAttribute="leading" secondItem="Y1u-wA-HmC" secondAttribute="leading" id="L0X-DT-v65"/>
                             <constraint firstItem="BxB-Ci-R4d" firstAttribute="top" secondItem="nw3-Or-xac" secondAttribute="bottom" constant="20" id="Qcv-8D-nBA"/>
-                            <constraint firstItem="2yb-1v-Z2f" firstAttribute="top" secondItem="Y1u-wA-HmC" secondAttribute="bottom" constant="8" id="QdO-Pg-fy4"/>
                             <constraint firstItem="nw3-Or-xac" firstAttribute="top" secondItem="QQs-pp-Jsy" secondAttribute="bottom" constant="8" id="RxL-yO-MIF"/>
                             <constraint firstItem="BxB-Ci-R4d" firstAttribute="leading" secondItem="Lfw-iU-Chk" secondAttribute="leading" constant="15" id="bEY-bt-fcs"/>
                             <constraint firstItem="nw3-Or-xac" firstAttribute="leading" secondItem="Lfw-iU-Chk" secondAttribute="leading" constant="15" id="deD-9g-IOc"/>
                             <constraint firstItem="QQs-pp-Jsy" firstAttribute="top" secondItem="Lfw-iU-Chk" secondAttribute="top" constant="20" id="epI-dU-L8I"/>
                             <constraint firstItem="Y1u-wA-HmC" firstAttribute="top" secondItem="ejc-Om-FSo" secondAttribute="bottom" constant="20" id="jYB-Zs-l5K"/>
                             <constraint firstItem="QQs-pp-Jsy" firstAttribute="leading" secondItem="Lfw-iU-Chk" secondAttribute="leading" constant="15" id="opD-YV-Mqh"/>
-                            <constraint firstItem="2yb-1v-Z2f" firstAttribute="trailing" secondItem="Lfw-iU-Chk" secondAttribute="trailing" constant="-10" id="xAP-Jr-s4p"/>
+                            <constraint firstItem="2yb-1v-Z2f" firstAttribute="top" secondItem="Y1u-wA-HmC" secondAttribute="bottom" constant="8" symbolic="YES" id="oqI-GT-okE"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="Lfw-iU-Chk"/>
                     </view>
-                    <navigationItem key="navigationItem" title="User Info" id="k3V-Xe-x2X">
-                        <barButtonItem key="rightBarButtonItem" style="done" systemItem="done" id="ZyS-hI-pFe">
-                            <connections>
-                                <segue destination="Pnc-Sp-SFN" kind="unwind" unwindAction="settingsWithUnwindSegue:" id="Vvf-zB-Xqb"/>
-                            </connections>
-                        </barButtonItem>
-                    </navigationItem>
+                    <navigationItem key="navigationItem" title="User Info" id="k3V-Xe-x2X"/>
                     <connections>
                         <outlet property="firstnameTextField" destination="nw3-Or-xac" id="Sb0-NB-dql"/>
                         <outlet property="lastnameTextField" destination="ejc-Om-FSo" id="tx5-mA-AyB"/>
@@ -430,7 +424,6 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Qbm-63-0VF" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-                <exit id="Pnc-Sp-SFN" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="5799" y="572"/>
         </scene>
@@ -442,7 +435,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <toolbar key="tableFooterView" opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="8C2-wf-RAh">
-                            <rect key="frame" x="0.0" y="108" width="414" height="44"/>
+                            <rect key="frame" x="0.0" y="162" width="414" height="44"/>
                             <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
                             <items>
                                 <barButtonItem title="Next" width="513" id="P61-yz-FkC">
@@ -656,12 +649,8 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ATA 2020 Safety App" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="20" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="7Lo-EL-6vR">
-                                <rect key="frame" x="10" y="430" width="394" height="42"/>
+                                <rect key="frame" x="46" y="430" width="322" height="42"/>
                                 <color key="tintColor" name="DarkLight Mode Colours"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="394" id="RKx-IX-N6Q"/>
-                                    <constraint firstAttribute="height" constant="42" id="bTM-in-gGO"/>
-                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="35"/>
                                 <color key="textColor" name="DarkLight Mode Colours"/>
                                 <nil key="highlightedColor"/>
@@ -677,9 +666,9 @@
                         </subviews>
                         <color key="backgroundColor" systemColor="systemGroupedBackgroundColor" red="0.94901960780000005" green="0.94901960780000005" blue="0.96862745100000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="7Lo-EL-6vR" firstAttribute="top" secondItem="2Zi-6Q-Say" secondAttribute="bottom" constant="15" id="0xX-3S-uKi"/>
                             <constraint firstItem="2Zi-6Q-Say" firstAttribute="centerX" secondItem="xHE-JS-XR2" secondAttribute="centerX" id="1fW-ll-Hzw"/>
-                            <constraint firstItem="7Lo-EL-6vR" firstAttribute="centerY" secondItem="xHE-JS-XR2" secondAttribute="centerY" constant="3" id="2h2-we-oEE"/>
-                            <constraint firstItem="7Lo-EL-6vR" firstAttribute="centerX" secondItem="xHE-JS-XR2" secondAttribute="centerX" id="Zwn-hl-xiB"/>
+                            <constraint firstItem="7Lo-EL-6vR" firstAttribute="centerX" secondItem="2Zi-6Q-Say" secondAttribute="centerX" id="Iuh-hZ-h4U"/>
                             <constraint firstItem="2Zi-6Q-Say" firstAttribute="centerY" secondItem="xHE-JS-XR2" secondAttribute="centerY" constant="-133" id="tWW-77-mpO"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="c8e-s0-F7x"/>
@@ -729,23 +718,23 @@
             <point key="canvasLocation" x="3340.579710144928" y="-350.22321428571428"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="NuM-Il-zb9"/>
+    </inferredMetricsTieBreakers>
     <resources>
         <image name="SlackLogin" width="172" height="40"/>
-        <image name="calendar" catalog="system" width="64" height="52"/>
-        <image name="calendar.circle" catalog="system" width="64" height="60"/>
-        <image name="exclamationmark.bubble" catalog="system" width="64" height="54"/>
-        <image name="exclamationmark.triangle" catalog="system" width="64" height="56"/>
-        <image name="gear" catalog="system" width="64" height="58"/>
-        <image name="house" catalog="system" width="64" height="54"/>
-        <image name="info" catalog="system" width="46" height="64"/>
-        <image name="location" catalog="system" width="64" height="56"/>
-        <image name="person" catalog="system" width="64" height="58"/>
-        <image name="person.icloud" catalog="system" width="64" height="44"/>
+        <image name="calendar" catalog="system" width="128" height="106"/>
+        <image name="calendar.circle" catalog="system" width="128" height="121"/>
+        <image name="exclamationmark.bubble" catalog="system" width="128" height="110"/>
+        <image name="exclamationmark.triangle" catalog="system" width="128" height="112"/>
+        <image name="gear" catalog="system" width="128" height="119"/>
+        <image name="house" catalog="system" width="128" height="110"/>
+        <image name="info" catalog="system" width="93" height="128"/>
+        <image name="location" catalog="system" width="128" height="115"/>
+        <image name="person" catalog="system" width="128" height="117"/>
+        <image name="person.icloud" catalog="system" width="128" height="88"/>
         <namedColor name="DarkLight Mode Colours">
             <color red="1" green="0.66500002145767212" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
     </resources>
-    <inferredMetricsTieBreakers>
-        <segue reference="NuM-Il-zb9"/>
-    </inferredMetricsTieBreakers>
 </document>
